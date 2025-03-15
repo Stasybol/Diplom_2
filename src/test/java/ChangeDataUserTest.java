@@ -1,0 +1,113 @@
+import io.qameta.allure.Description;
+import io.qameta.allure.junit4.DisplayName;
+import io.restassured.response.ValidatableResponse;
+import org.junit.*;
+import site.nomoreparties.stellarburgers.client.BurgerServiceClient;
+import site.nomoreparties.stellarburgers.model.Credentials;
+import site.nomoreparties.stellarburgers.model.TokenUser;
+import site.nomoreparties.stellarburgers.model.User;
+import static org.apache.http.HttpStatus.*;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static site.nomoreparties.stellarburgers.constant.RandomData.*;
+import static site.nomoreparties.stellarburgers.constant.Response.*;
+import static site.nomoreparties.stellarburgers.constant.Request.BASE_URI;
+
+public class ChangeDataUserTest {
+    private User user;
+    private BurgerServiceClient client;
+    private String token;
+
+    @Before
+    @DisplayName("Подготовка данных: создание пользователя")
+    @Description("Создание пользователя перед каждым тестом. Предполагается, что пользователь успешно создан и получен его token.")
+    public void createUser(){
+        client = new BurgerServiceClient(BASE_URI);
+        user = User.allField();
+        ValidatableResponse responseCreate = client.createUser(user);
+        responseCreate.assertThat().body(SUCCESS, equalTo(true));
+        token = responseCreate.extract().as(TokenUser.class).getToken();
+    }
+
+    @Test
+    @DisplayName("Изменение логина авторизованного пользователя")
+    @Description("Проверка успешного изменения поля email авторизованного пользователя.")
+    public void authorizationAndChangeEmail(){
+        Credentials credentials = Credentials.withOtherEmail(user, EMAIL);
+        ValidatableResponse responseChange = client.changeDataUser(credentials, token);
+        responseChange.assertThat().statusCode(SC_OK).body(SUCCESS, equalTo(true));
+    }
+
+    @Test
+    @DisplayName("Изменение пароля авторизованного пользователя")
+    @Description("Проверка успешного изменения поля password авторизованного пользователя.")
+    public void authorizationAndChangePassword(){
+        Credentials credentials = Credentials.withOtherPassword(user, PASSWORD);
+        ValidatableResponse responseChange = client.changeDataUser(credentials, token);
+        responseChange.assertThat().statusCode(SC_OK).body(SUCCESS, equalTo(true));
+    }
+
+    @Test
+    @DisplayName("Изменение имени авторизованного пользователя")
+    @Description("Проверка успешного изменения поля name авторизованного пользователя.")
+    public void authorizationAndChangeName(){
+        Credentials credentials = Credentials.withOtherName(user, NAME);
+        ValidatableResponse responseChange = client.changeDataUser(credentials, token);
+        responseChange.assertThat().statusCode(SC_OK).body(SUCCESS, equalTo(true));
+    }
+
+    @Test
+    @DisplayName("Изменение логина без авторизации")
+    @Description("Проверка, что система возвращает ошибку при попытке изменения поля email без авторизации.")
+    public void withoutAuthorizationAndChangeEmail(){
+        Credentials credentials = Credentials.withOtherEmail(user, EMAIL);
+        ValidatableResponse responseChange = client.changeDataUser(credentials);
+        responseChange.assertThat().statusCode(SC_UNAUTHORIZED).body(MESSAGE, equalTo(WITHOUT_AUTHORIZATION));
+    }
+
+    @Test
+    @DisplayName("Изменение пароля без авторизации")
+    @Description("Проверка, что система возвращает ошибку при попытке изменения поля password без авторизации.")
+    public void withoutAuthorizationAndChangePassword(){
+        Credentials credentials = Credentials.withOtherPassword(user, PASSWORD);
+        ValidatableResponse responseChange = client.changeDataUser(credentials);
+        responseChange.assertThat().statusCode(SC_UNAUTHORIZED).body(MESSAGE, equalTo(WITHOUT_AUTHORIZATION));
+    }
+
+    @Test
+    @DisplayName("Изменение имени без авторизации")
+    @Description("Проверка, что система возвращает ошибку при попытке изменения поля name без авторизации.")
+    public void withoutAuthorizationAndChangeName(){
+        Credentials credentials = Credentials.withOtherName(user, NAME);
+        ValidatableResponse responseChange = client.changeDataUser(credentials);
+        responseChange.assertThat().statusCode(SC_UNAUTHORIZED).body(MESSAGE, equalTo(WITHOUT_AUTHORIZATION));
+    }
+
+    @Test
+    @DisplayName("Попытка изменения логина на уже существующий")
+    @Description("Проверка, что система возвращает ошибку при попытке изменения поля email на уже существующий в системе.")
+    public void authorizationAndRepeatEmail(){
+        String existingEmail = user.getEmail();
+        User userTwo = User.allField();
+        ValidatableResponse responseCreateTwo = client.createUser(userTwo);
+        responseCreateTwo.assertThat().body(SUCCESS, equalTo(true));
+        String tokenTwo = responseCreateTwo.extract().as(TokenUser.class).getToken();
+
+        Credentials credentials = Credentials.withOtherEmail(userTwo, existingEmail);
+        ValidatableResponse responseChange = client.changeDataUser(credentials, tokenTwo);
+        responseChange.assertThat().statusCode(SC_FORBIDDEN).body(MESSAGE, equalTo(CHANGE_REPEAT_EMAIL));
+
+        ValidatableResponse responseDelete = client.deleteUser(tokenTwo);
+        responseDelete.assertThat().statusCode(SC_ACCEPTED).body(SUCCESS, equalTo(true));
+    }
+
+    @After
+    @DisplayName("Очистка данных: удаление пользователя")
+    @Description("Удаление пользователя после выполнения каждого теста")
+    public void dataCleaning(){
+        ValidatableResponse responseDelete = client.deleteUser(token);
+        responseDelete.assertThat().statusCode(SC_ACCEPTED).body(SUCCESS, equalTo(true));
+
+    }
+}
+
+
