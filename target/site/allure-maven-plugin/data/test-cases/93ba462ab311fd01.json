@@ -1,0 +1,123 @@
+{
+  "uid" : "93ba462ab311fd01",
+  "name" : "Успешная авторизация пользователя",
+  "fullName" : "LoginUserTest.successAuthorization",
+  "historyId" : "abecda93a105b397f7dc7f2cf2a129d2",
+  "time" : {
+    "start" : 1741939013551,
+    "stop" : 1741939014730,
+    "duration" : 1179
+  },
+  "description" : "Проверка успешной авторизации пользователя с корректными полями email, password, name.",
+  "descriptionHtml" : "<p>Проверка успешной авторизации пользователя с корректными полями email, password, name.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Проверка успешной авторизации пользователя с корректными полями email, password, name.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание пользователя",
+      "time" : {
+        "start" : 1741939013552,
+        "stop" : 1741939013822,
+        "duration" : 270
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "site.nomoreparties.stellarburgers.model.User@eba3009"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Авторизация пользователя",
+      "time" : {
+        "start" : 1741939013830,
+        "stop" : 1741939014121,
+        "duration" : 291
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "credentials",
+        "value" : "site.nomoreparties.stellarburgers.model.Credentials@29ac632a"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Удаление пользователя",
+      "time" : {
+        "start" : 1741939014130,
+        "stop" : 1741939014721,
+        "duration" : 591
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "token",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDNlMTQ1OWVkMjgwMDAxYjU5YWJkNiIsImlhdCI6MTc0MTkzOTAxMywiZXhwIjoxNzQxOTQwMjEzfQ.Yqhqw3bA44jPoacN-zn4qAdzaV75VR0TMiSVEiaWj2Y"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "LoginUserTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "successAuthorization"
+  }, {
+    "name" : "suite",
+    "value" : "LoginUserTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-9K741VKQF95"
+  }, {
+    "name" : "thread",
+    "value" : "4156@WIN-9K741VKQF95.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "93ba462ab311fd01.json",
+  "parameterValues" : [ ]
+}

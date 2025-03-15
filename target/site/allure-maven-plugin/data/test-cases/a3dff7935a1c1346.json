@@ -1,0 +1,162 @@
+{
+  "uid" : "a3dff7935a1c1346",
+  "name" : "Попытка изменения логина на уже существующий",
+  "fullName" : "ChangeDataUserTest.authorizationAndRepeatEmail",
+  "historyId" : "db7e74d253bf19dba829a7e751905500",
+  "time" : {
+    "start" : 1741938982856,
+    "stop" : 1741938988156,
+    "duration" : 5300
+  },
+  "description" : "Проверка, что система возвращает ошибку при попытке изменения поля email на уже существующий в системе.",
+  "descriptionHtml" : "<p>Проверка, что система возвращает ошибку при попытке изменения поля email на уже существующий в системе.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Проверка, что система возвращает ошибку при попытке изменения поля email на уже существующий в системе.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание пользователя",
+      "time" : {
+        "start" : 1741938983194,
+        "stop" : 1741938985552,
+        "duration" : 2358
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "site.nomoreparties.stellarburgers.model.User@2c16677c"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Создание пользователя",
+      "time" : {
+        "start" : 1741938986259,
+        "stop" : 1741938986546,
+        "duration" : 287
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "site.nomoreparties.stellarburgers.model.User@67c2ff5d"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Изменение данных пользователя с авторизацией",
+      "time" : {
+        "start" : 1741938986558,
+        "stop" : 1741938986841,
+        "duration" : 283
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "credentials",
+        "value" : "site.nomoreparties.stellarburgers.model.Credentials@63069995"
+      }, {
+        "name" : "token",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDNlMTJhOWVkMjgwMDAxYjU5YWJiMCIsImlhdCI6MTc0MTkzODk4NiwiZXhwIjoxNzQxOTQwMTg2fQ.ugmjJ27PTr5TCEuQbPddXBJC8q6uXb2UimBR8lu-7X4"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Удаление пользователя",
+      "time" : {
+        "start" : 1741938986868,
+        "stop" : 1741938987463,
+        "duration" : 595
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "token",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDNlMTJhOWVkMjgwMDAxYjU5YWJiMCIsImlhdCI6MTc0MTkzODk4NiwiZXhwIjoxNzQxOTQwMTg2fQ.ugmjJ27PTr5TCEuQbPddXBJC8q6uXb2UimBR8lu-7X4"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Удаление пользователя",
+      "time" : {
+        "start" : 1741938987472,
+        "stop" : 1741938988144,
+        "duration" : 672
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "token",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDNlMTI5OWVkMjgwMDAxYjU5YWJhZSIsImlhdCI6MTc0MTkzODk4NSwiZXhwIjoxNzQxOTQwMTg1fQ.5w8eME3XTHOXCteR-wIHVAlMbegMIFOnzmOLmuGlRZg"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "ChangeDataUserTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "authorizationAndRepeatEmail"
+  }, {
+    "name" : "suite",
+    "value" : "ChangeDataUserTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-9K741VKQF95"
+  }, {
+    "name" : "thread",
+    "value" : "4156@WIN-9K741VKQF95.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a3dff7935a1c1346.json",
+  "parameterValues" : [ ]
+}

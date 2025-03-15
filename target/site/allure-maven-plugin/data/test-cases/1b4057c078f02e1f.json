@@ -1,0 +1,123 @@
+{
+  "uid" : "1b4057c078f02e1f",
+  "name" : "Изменение пароля без авторизации",
+  "fullName" : "ChangeDataUserTest.withoutAuthorizationAndChangePassword",
+  "historyId" : "91a60733ade19214c8a2f5549eeeefbb",
+  "time" : {
+    "start" : 1741938994191,
+    "stop" : 1741938995283,
+    "duration" : 1092
+  },
+  "description" : "Проверка, что система возвращает ошибку при попытке изменения поля password без авторизации.",
+  "descriptionHtml" : "<p>Проверка, что система возвращает ошибку при попытке изменения поля password без авторизации.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Проверка, что система возвращает ошибку при попытке изменения поля password без авторизации.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание пользователя",
+      "time" : {
+        "start" : 1741938994191,
+        "stop" : 1741938994459,
+        "duration" : 268
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "site.nomoreparties.stellarburgers.model.User@5cea34e6"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Изменение данных пользователя без авторизации",
+      "time" : {
+        "start" : 1741938994468,
+        "stop" : 1741938994663,
+        "duration" : 195
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "credentials",
+        "value" : "site.nomoreparties.stellarburgers.model.Credentials@31c87223"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Удаление пользователя",
+      "time" : {
+        "start" : 1741938994673,
+        "stop" : 1741938995275,
+        "duration" : 602
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "token",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDNlMTMyOWVkMjgwMDAxYjU5YWJiYyIsImlhdCI6MTc0MTkzODk5NCwiZXhwIjoxNzQxOTQwMTk0fQ.IjF2P1b5OX7iAbfoEvXiQjrG3lenLptlqCBx0em9glg"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "ChangeDataUserTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "withoutAuthorizationAndChangePassword"
+  }, {
+    "name" : "suite",
+    "value" : "ChangeDataUserTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-9K741VKQF95"
+  }, {
+    "name" : "thread",
+    "value" : "4156@WIN-9K741VKQF95.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1b4057c078f02e1f.json",
+  "parameterValues" : [ ]
+}
