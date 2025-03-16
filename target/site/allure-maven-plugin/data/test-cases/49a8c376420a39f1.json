@@ -1,12 +1,12 @@
 {
-  "uid" : "992bfbd6405c288c",
+  "uid" : "49a8c376420a39f1",
   "name" : "Авторизация без указания пароля",
   "fullName" : "LoginUserTest.withoutPassword",
   "historyId" : "fde9491d36478996e4e733df8ff49b55",
   "time" : {
-    "start" : 1741939015952,
-    "stop" : 1741939017014,
-    "duration" : 1062
+    "start" : 1742114740088,
+    "stop" : 1742114741310,
+    "duration" : 1222
   },
   "description" : "Проверка, что система возвращает ошибку при попытке авторизации без указания поля password.",
   "descriptionHtml" : "<p>Проверка, что система возвращает ошибку при попытке авторизации без указания поля password.</p>\n",
@@ -20,64 +20,64 @@
     "steps" : [ {
       "name" : "Создание пользователя",
       "time" : {
-        "start" : 1741939015952,
-        "stop" : 1741939016208,
-        "duration" : 256
+        "start" : 1742114740088,
+        "stop" : 1742114740341,
+        "duration" : 253
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "user",
-        "value" : "site.nomoreparties.stellarburgers.model.User@9a4bb97"
+        "value" : "site.nomoreparties.stellarburgers.model.User@2e15a0d7"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Авторизация пользователя",
       "time" : {
-        "start" : 1741939016216,
-        "stop" : 1741939016409,
-        "duration" : 193
+        "start" : 1742114740349,
+        "stop" : 1742114740566,
+        "duration" : 217
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "credentials",
-        "value" : "site.nomoreparties.stellarburgers.model.Credentials@3789bd95"
+        "value" : "site.nomoreparties.stellarburgers.model.Credentials@36f2a2a3"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Удаление пользователя",
       "time" : {
-        "start" : 1741939016417,
-        "stop" : 1741939017006,
-        "duration" : 589
+        "start" : 1742114740582,
+        "stop" : 1742114741294,
+        "duration" : 712
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "token",
-        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDNlMTQ4OWVkMjgwMDAxYjU5YWJkYyIsImlhdCI6MTc0MTkzOTAxNiwiZXhwIjoxNzQxOTQwMjE2fQ.9dtYoBu4cn9AoK98gXKXGsAIy1L0G2wZPzxqlTy8Dyk"
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDY4ZmIzOWVkMjgwMDAxYjVhMDI1YyIsImlhdCI6MTc0MjExNDczOSwiZXhwIjoxNzQyMTE1OTM5fQ.z3vvqtw6O2vqHfOMlovqYBk-H84NoKwUikkcy0vFE30"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
-    "hasContent" : true,
     "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 3
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -97,7 +97,7 @@
     "value" : "WIN-9K741VKQF95"
   }, {
     "name" : "thread",
-    "value" : "4156@WIN-9K741VKQF95.main(1)"
+    "value" : "17748@WIN-9K741VKQF95.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -118,6 +118,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "992bfbd6405c288c.json",
+  "source" : "49a8c376420a39f1.json",
   "parameterValues" : [ ]
 }

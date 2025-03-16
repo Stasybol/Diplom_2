@@ -1,12 +1,12 @@
 {
-  "uid" : "8c1ea5734051e75b",
+  "uid" : "8130fef32673edae",
   "name" : "Создание пользователя с уже существующим логином",
   "fullName" : "CreateUserTest.withExistingLogin",
   "historyId" : "ff29287918728bc29350dc01c1d787db",
   "time" : {
-    "start" : 1741939007812,
-    "stop" : 1741939008939,
-    "duration" : 1127
+    "start" : 1742114731957,
+    "stop" : 1742114733139,
+    "duration" : 1182
   },
   "description" : "Проверка, что система возвращает ошибку при попытке создания пользователя с уже существующим полем email.",
   "descriptionHtml" : "<p>Проверка, что система возвращает ошибку при попытке создания пользователя с уже существующим полем email.</p>\n",
@@ -20,64 +20,64 @@
     "steps" : [ {
       "name" : "Создание пользователя",
       "time" : {
-        "start" : 1741939007812,
-        "stop" : 1741939008081,
-        "duration" : 269
+        "start" : 1742114731957,
+        "stop" : 1742114732232,
+        "duration" : 275
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "user",
-        "value" : "site.nomoreparties.stellarburgers.model.User@73c72238"
+        "value" : "site.nomoreparties.stellarburgers.model.User@52b2f795"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Создание пользователя",
       "time" : {
-        "start" : 1741939008084,
-        "stop" : 1741939008274,
-        "duration" : 190
+        "start" : 1742114732232,
+        "stop" : 1742114732412,
+        "duration" : 180
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "user",
-        "value" : "site.nomoreparties.stellarburgers.model.User@73c72238"
+        "value" : "site.nomoreparties.stellarburgers.model.User@52b2f795"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Удаление пользователя",
       "time" : {
-        "start" : 1741939008283,
-        "stop" : 1741939008927,
-        "duration" : 644
+        "start" : 1742114732437,
+        "stop" : 1742114733110,
+        "duration" : 673
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "token",
-        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDNlMTNmOWVkMjgwMDAxYjU5YWJjYSIsImlhdCI6MTc0MTkzOTAwNywiZXhwIjoxNzQxOTQwMjA3fQ.sYhNYTfCgeJO4d9wi044PhpdOLO9OP0AAAO5vjSKgTs"
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDY4ZmFiOWVkMjgwMDAxYjVhMDI0YiIsImlhdCI6MTc0MjExNDczMSwiZXhwIjoxNzQyMTE1OTMxfQ.XwR6ggy03oyar2VGG5WbA9ivIaMHrTfKkhJ3gGFRcEA"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
-    "hasContent" : true,
     "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 3
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -97,7 +97,7 @@
     "value" : "WIN-9K741VKQF95"
   }, {
     "name" : "thread",
-    "value" : "4156@WIN-9K741VKQF95.main(1)"
+    "value" : "17748@WIN-9K741VKQF95.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -118,6 +118,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "8c1ea5734051e75b.json",
+  "source" : "8130fef32673edae.json",
   "parameterValues" : [ ]
 }

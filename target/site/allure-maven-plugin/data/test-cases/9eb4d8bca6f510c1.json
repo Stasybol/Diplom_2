@@ -1,0 +1,105 @@
+{
+  "uid" : "9eb4d8bca6f510c1",
+  "name" : "Создание нового пользователя с валидными данными",
+  "fullName" : "CreateUserTest.createNewUser",
+  "historyId" : "e1eab30f737dcaee198075618a4c5952",
+  "time" : {
+    "start" : 1742114730834,
+    "stop" : 1742114731778,
+    "duration" : 944
+  },
+  "description" : "Проверка успешного создания пользователя, когда все обязательные поля (email, password, name) заполнены корректно.",
+  "descriptionHtml" : "<p>Проверка успешного создания пользователя, когда все обязательные поля (email, password, name) заполнены корректно.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Проверка успешного создания пользователя, когда все обязательные поля (email, password, name) заполнены корректно.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание пользователя",
+      "time" : {
+        "start" : 1742114730842,
+        "stop" : 1742114731083,
+        "duration" : 241
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "site.nomoreparties.stellarburgers.model.User@19e78fa"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Удаление пользователя",
+      "time" : {
+        "start" : 1742114731099,
+        "stop" : 1742114731771,
+        "duration" : 672
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "token",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDY4ZmFhOWVkMjgwMDAxYjVhMDI0OSIsImlhdCI6MTc0MjExNDczMCwiZXhwIjoxNzQyMTE1OTMwfQ.t6dI1MWVqJcXKJ-YhcqIbVIMnPMDMcCMcrMQPmjpk2U"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 2
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : ""
+  }, {
+    "name" : "testClass",
+    "value" : "CreateUserTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createNewUser"
+  }, {
+    "name" : "suite",
+    "value" : "CreateUserTest"
+  }, {
+    "name" : "host",
+    "value" : "WIN-9K741VKQF95"
+  }, {
+    "name" : "thread",
+    "value" : "17748@WIN-9K741VKQF95.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9eb4d8bca6f510c1.json",
+  "parameterValues" : [ ]
+}

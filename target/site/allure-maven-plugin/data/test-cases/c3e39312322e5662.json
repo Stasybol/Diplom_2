@@ -1,12 +1,12 @@
 {
-  "uid" : "1b4057c078f02e1f",
+  "uid" : "c3e39312322e5662",
   "name" : "Изменение пароля без авторизации",
   "fullName" : "ChangeDataUserTest.withoutAuthorizationAndChangePassword",
   "historyId" : "91a60733ade19214c8a2f5549eeeefbb",
   "time" : {
-    "start" : 1741938994191,
-    "stop" : 1741938995283,
-    "duration" : 1092
+    "start" : 1742114718066,
+    "stop" : 1742114719131,
+    "duration" : 1065
   },
   "description" : "Проверка, что система возвращает ошибку при попытке изменения поля password без авторизации.",
   "descriptionHtml" : "<p>Проверка, что система возвращает ошибку при попытке изменения поля password без авторизации.</p>\n",
@@ -20,64 +20,64 @@
     "steps" : [ {
       "name" : "Создание пользователя",
       "time" : {
-        "start" : 1741938994191,
-        "stop" : 1741938994459,
-        "duration" : 268
+        "start" : 1742114718066,
+        "stop" : 1742114718324,
+        "duration" : 258
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "user",
-        "value" : "site.nomoreparties.stellarburgers.model.User@5cea34e6"
+        "value" : "site.nomoreparties.stellarburgers.model.User@6809a461"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Изменение данных пользователя без авторизации",
       "time" : {
-        "start" : 1741938994468,
-        "stop" : 1741938994663,
-        "duration" : 195
+        "start" : 1742114718332,
+        "stop" : 1742114718507,
+        "duration" : 175
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "credentials",
-        "value" : "site.nomoreparties.stellarburgers.model.Credentials@31c87223"
+        "value" : "site.nomoreparties.stellarburgers.model.Credentials@6fab0d15"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Удаление пользователя",
       "time" : {
-        "start" : 1741938994673,
-        "stop" : 1741938995275,
-        "duration" : 602
+        "start" : 1742114718557,
+        "stop" : 1742114719124,
+        "duration" : 567
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "token",
-        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDNlMTMyOWVkMjgwMDAxYjU5YWJiYyIsImlhdCI6MTc0MTkzODk5NCwiZXhwIjoxNzQxOTQwMTk0fQ.IjF2P1b5OX7iAbfoEvXiQjrG3lenLptlqCBx0em9glg"
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDY4ZjlkOWVkMjgwMDAxYjVhMDIzNiIsImlhdCI6MTc0MjExNDcxNywiZXhwIjoxNzQyMTE1OTE3fQ.FwltZij6GQIH-XEOzsf3w6gyUSwFxZakXYGVRSjIY80"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
-    "hasContent" : true,
     "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 3
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -97,7 +97,7 @@
     "value" : "WIN-9K741VKQF95"
   }, {
     "name" : "thread",
-    "value" : "4156@WIN-9K741VKQF95.main(1)"
+    "value" : "17748@WIN-9K741VKQF95.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -118,6 +118,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "1b4057c078f02e1f.json",
+  "source" : "c3e39312322e5662.json",
   "parameterValues" : [ ]
 }

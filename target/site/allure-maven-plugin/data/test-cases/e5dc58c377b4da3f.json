@@ -1,12 +1,12 @@
 {
-  "uid" : "ab537075344eae39",
+  "uid" : "e5dc58c377b4da3f",
   "name" : "Создание пользователя без указания имени",
   "fullName" : "CreateUserTest.withoutName",
   "historyId" : "dfd3a19b4ec62342d160b654b1efc4db",
   "time" : {
-    "start" : 1741939006323,
-    "stop" : 1741939006523,
-    "duration" : 200
+    "start" : 1742114730449,
+    "stop" : 1742114730638,
+    "duration" : 189
   },
   "description" : "Проверка, что система возвращает ошибку при попытке создания пользователя без указания поля name.",
   "descriptionHtml" : "<p>Проверка, что система возвращает ошибку при попытке создания пользователя без указания поля name.</p>\n",
@@ -20,28 +20,28 @@
     "steps" : [ {
       "name" : "Создание пользователя",
       "time" : {
-        "start" : 1741939006324,
-        "stop" : 1741939006514,
-        "duration" : 190
+        "start" : 1742114730449,
+        "stop" : 1742114730622,
+        "duration" : 173
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "user",
-        "value" : "site.nomoreparties.stellarburgers.model.User@3aca7082"
+        "value" : "site.nomoreparties.stellarburgers.model.User@e156110"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 1,
-    "hasContent" : true,
     "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 1
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -61,7 +61,7 @@
     "value" : "WIN-9K741VKQF95"
   }, {
     "name" : "thread",
-    "value" : "4156@WIN-9K741VKQF95.main(1)"
+    "value" : "17748@WIN-9K741VKQF95.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -82,6 +82,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "ab537075344eae39.json",
+  "source" : "e5dc58c377b4da3f.json",
   "parameterValues" : [ ]
 }

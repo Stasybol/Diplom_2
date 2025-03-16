@@ -1,12 +1,12 @@
 {
-  "uid" : "6a406fe03c75e323",
+  "uid" : "181341b8b5c815c8",
   "name" : "Авторизация с некорректным именем",
   "fullName" : "LoginUserTest.withIncorrectName",
   "historyId" : "73e6487304872e758b2c9b2b398469e4",
   "time" : {
-    "start" : 1741939014731,
-    "stop" : 1741939015951,
-    "duration" : 1220
+    "start" : 1742114738905,
+    "stop" : 1742114740078,
+    "duration" : 1173
   },
   "description" : "Проверка, что авторизация проходит успешно, даже если указано некорректное имя (оно не влияет на авторизацию).",
   "descriptionHtml" : "<p>Проверка, что авторизация проходит успешно, даже если указано некорректное имя (оно не влияет на авторизацию).</p>\n",
@@ -20,64 +20,64 @@
     "steps" : [ {
       "name" : "Создание пользователя",
       "time" : {
-        "start" : 1741939014731,
-        "stop" : 1741939015011,
-        "duration" : 280
+        "start" : 1742114738905,
+        "stop" : 1742114739168,
+        "duration" : 263
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "user",
-        "value" : "site.nomoreparties.stellarburgers.model.User@776dd64b"
+        "value" : "site.nomoreparties.stellarburgers.model.User@e0eecbe"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Авторизация пользователя",
       "time" : {
-        "start" : 1741939015020,
-        "stop" : 1741939015311,
-        "duration" : 291
+        "start" : 1742114739168,
+        "stop" : 1742114739422,
+        "duration" : 254
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "credentials",
-        "value" : "site.nomoreparties.stellarburgers.model.Credentials@2de08488"
+        "value" : "site.nomoreparties.stellarburgers.model.Credentials@7ab66d54"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Удаление пользователя",
       "time" : {
-        "start" : 1741939015320,
-        "stop" : 1741939015943,
-        "duration" : 623
+        "start" : 1742114739437,
+        "stop" : 1742114740066,
+        "duration" : 629
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "token",
-        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDNlMTQ2OWVkMjgwMDAxYjU5YWJkOSIsImlhdCI6MTc0MTkzOTAxNCwiZXhwIjoxNzQxOTQwMjE0fQ.1N6Tn98sFlFhMCG6zpsoU2n8KqaMNJHjQdAwmNpYRF8"
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDY4ZmIyOWVkMjgwMDAxYjVhMDI1OSIsImlhdCI6MTc0MjExNDczOCwiZXhwIjoxNzQyMTE1OTM4fQ.4_XkeoslSjtvmaPBJV470-w2zUZt2eBpjD890ZORMxs"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
-    "hasContent" : true,
     "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 3
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -97,7 +97,7 @@
     "value" : "WIN-9K741VKQF95"
   }, {
     "name" : "thread",
-    "value" : "4156@WIN-9K741VKQF95.main(1)"
+    "value" : "17748@WIN-9K741VKQF95.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -118,6 +118,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "6a406fe03c75e323.json",
+  "source" : "181341b8b5c815c8.json",
   "parameterValues" : [ ]
 }

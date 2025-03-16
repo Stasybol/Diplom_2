@@ -1,12 +1,12 @@
 {
-  "uid" : "635a2ef61ad0b04b",
+  "uid" : "23c19d7dcf796b02",
   "name" : "Изменение логина авторизованного пользователя",
   "fullName" : "ChangeDataUserTest.authorizationAndChangeEmail",
   "historyId" : "a52a3a56eb2395b350ab208547df23ef",
   "time" : {
-    "start" : 1741938990557,
-    "stop" : 1741938991778,
-    "duration" : 1221
+    "start" : 1742114714553,
+    "stop" : 1742114715736,
+    "duration" : 1183
   },
   "description" : "Проверка успешного изменения поля email авторизованного пользователя.",
   "descriptionHtml" : "<p>Проверка успешного изменения поля email авторизованного пользователя.</p>\n",
@@ -20,67 +20,67 @@
     "steps" : [ {
       "name" : "Создание пользователя",
       "time" : {
-        "start" : 1741938990557,
-        "stop" : 1741938990815,
-        "duration" : 258
+        "start" : 1742114714553,
+        "stop" : 1742114714827,
+        "duration" : 274
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "user",
-        "value" : "site.nomoreparties.stellarburgers.model.User@4c04188"
+        "value" : "site.nomoreparties.stellarburgers.model.User@1cb09347"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Изменение данных пользователя с авторизацией",
       "time" : {
-        "start" : 1741938990824,
-        "stop" : 1741938991080,
-        "duration" : 256
+        "start" : 1742114714827,
+        "stop" : 1742114715092,
+        "duration" : 265
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "credentials",
-        "value" : "site.nomoreparties.stellarburgers.model.Credentials@3cc7cf58"
+        "value" : "site.nomoreparties.stellarburgers.model.Credentials@25f688d5"
       }, {
         "name" : "token",
-        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDNlMTJlOWVkMjgwMDAxYjU5YWJiNiIsImlhdCI6MTc0MTkzODk5MCwiZXhwIjoxNzQxOTQwMTkwfQ.mZkfsmSQ2jEfYBmoYiHqyTe8DX1QE9wAp0oRoSRvwVs"
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDY4Zjk5OWVkMjgwMDAxYjVhMDIyZCIsImlhdCI6MTc0MjExNDcxMywiZXhwIjoxNzQyMTE1OTEzfQ.lRADs3T9_K9NVdNd-bsDFK-2RJkqhfWD0Po2O2OhMQg"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Удаление пользователя",
       "time" : {
-        "start" : 1741938991090,
-        "stop" : 1741938991769,
-        "duration" : 679
+        "start" : 1742114715117,
+        "stop" : 1742114715719,
+        "duration" : 602
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "token",
-        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDNlMTJlOWVkMjgwMDAxYjU5YWJiNiIsImlhdCI6MTc0MTkzODk5MCwiZXhwIjoxNzQxOTQwMTkwfQ.mZkfsmSQ2jEfYBmoYiHqyTe8DX1QE9wAp0oRoSRvwVs"
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDY4Zjk5OWVkMjgwMDAxYjVhMDIyZCIsImlhdCI6MTc0MjExNDcxMywiZXhwIjoxNzQyMTE1OTEzfQ.lRADs3T9_K9NVdNd-bsDFK-2RJkqhfWD0Po2O2OhMQg"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
-    "hasContent" : true,
     "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 3
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -100,7 +100,7 @@
     "value" : "WIN-9K741VKQF95"
   }, {
     "name" : "thread",
-    "value" : "4156@WIN-9K741VKQF95.main(1)"
+    "value" : "17748@WIN-9K741VKQF95.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -121,6 +121,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "635a2ef61ad0b04b.json",
+  "source" : "23c19d7dcf796b02.json",
   "parameterValues" : [ ]
 }

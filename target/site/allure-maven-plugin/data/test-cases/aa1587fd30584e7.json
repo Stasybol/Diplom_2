@@ -1,12 +1,12 @@
 {
-  "uid" : "899249b4b611b35b",
+  "uid" : "aa1587fd30584e7",
   "name" : "Авторизация с некорректным логином",
   "fullName" : "LoginUserTest.withIncorrectEmail",
   "historyId" : "63f43d819210f11dc69ca37d5f5f899b",
   "time" : {
-    "start" : 1741939011272,
-    "stop" : 1741939012372,
-    "duration" : 1100
+    "start" : 1742114735496,
+    "stop" : 1742114736578,
+    "duration" : 1082
   },
   "description" : "Проверка, что система возвращает ошибку при попытке авторизации с некорректным полем email.",
   "descriptionHtml" : "<p>Проверка, что система возвращает ошибку при попытке авторизации с некорректным полем email.</p>\n",
@@ -20,64 +20,64 @@
     "steps" : [ {
       "name" : "Создание пользователя",
       "time" : {
-        "start" : 1741939011272,
-        "stop" : 1741939011555,
-        "duration" : 283
+        "start" : 1742114735496,
+        "stop" : 1742114735762,
+        "duration" : 266
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "user",
-        "value" : "site.nomoreparties.stellarburgers.model.User@ac570e0"
+        "value" : "site.nomoreparties.stellarburgers.model.User@4135b7f9"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Авторизация пользователя",
       "time" : {
-        "start" : 1741939011563,
-        "stop" : 1741939011755,
-        "duration" : 192
+        "start" : 1742114735771,
+        "stop" : 1742114735957,
+        "duration" : 186
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "credentials",
-        "value" : "site.nomoreparties.stellarburgers.model.Credentials@7d40f584"
+        "value" : "site.nomoreparties.stellarburgers.model.Credentials@3333b099"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Удаление пользователя",
       "time" : {
-        "start" : 1741939011762,
-        "stop" : 1741939012363,
-        "duration" : 601
+        "start" : 1742114735973,
+        "stop" : 1742114736558,
+        "duration" : 585
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "token",
-        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDNlMTQzOWVkMjgwMDAxYjU5YWJkMSIsImlhdCI6MTc0MTkzOTAxMSwiZXhwIjoxNzQxOTQwMjExfQ._wruzBcouwPxH214oaiLp7YY5dCuHCW6Xn13i0WoMc8"
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDY4ZmFlOWVkMjgwMDAxYjVhMDI1MiIsImlhdCI6MTc0MjExNDczNCwiZXhwIjoxNzQyMTE1OTM0fQ.I__BUY_TYet9RFji_mT3WxBRk7vMcOFeC4pCEqspkFw"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
-    "hasContent" : true,
     "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 3
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -97,7 +97,7 @@
     "value" : "WIN-9K741VKQF95"
   }, {
     "name" : "thread",
-    "value" : "4156@WIN-9K741VKQF95.main(1)"
+    "value" : "17748@WIN-9K741VKQF95.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -118,6 +118,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "899249b4b611b35b.json",
+  "source" : "aa1587fd30584e7.json",
   "parameterValues" : [ ]
 }

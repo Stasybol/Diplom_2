@@ -1,12 +1,12 @@
 {
-  "uid" : "7f97f635f0a94675",
+  "uid" : "bd5569c04d690db0",
   "name" : "Изменение логина без авторизации",
   "fullName" : "ChangeDataUserTest.withoutAuthorizationAndChangeEmail",
   "historyId" : "2bd40d460c244567fa287901214820a5",
   "time" : {
-    "start" : 1741938993010,
-    "stop" : 1741938994189,
-    "duration" : 1179
+    "start" : 1742114716895,
+    "stop" : 1742114718058,
+    "duration" : 1163
   },
   "description" : "Проверка, что система возвращает ошибку при попытке изменения поля email без авторизации.",
   "descriptionHtml" : "<p>Проверка, что система возвращает ошибку при попытке изменения поля email без авторизации.</p>\n",
@@ -20,64 +20,64 @@
     "steps" : [ {
       "name" : "Создание пользователя",
       "time" : {
-        "start" : 1741938993010,
-        "stop" : 1741938993315,
-        "duration" : 305
+        "start" : 1742114716895,
+        "stop" : 1742114717157,
+        "duration" : 262
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "user",
-        "value" : "site.nomoreparties.stellarburgers.model.User@4d92e9da"
+        "value" : "site.nomoreparties.stellarburgers.model.User@757bbd02"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Изменение данных пользователя без авторизации",
       "time" : {
-        "start" : 1741938993324,
-        "stop" : 1741938993514,
-        "duration" : 190
+        "start" : 1742114717161,
+        "stop" : 1742114717380,
+        "duration" : 219
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "credentials",
-        "value" : "site.nomoreparties.stellarburgers.model.Credentials@4a83740e"
+        "value" : "site.nomoreparties.stellarburgers.model.Credentials@15d25244"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Удаление пользователя",
       "time" : {
-        "start" : 1741938993524,
-        "stop" : 1741938994181,
-        "duration" : 657
+        "start" : 1742114717397,
+        "stop" : 1742114718049,
+        "duration" : 652
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "token",
-        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDNlMTMxOWVkMjgwMDAxYjU5YWJiYSIsImlhdCI6MTc0MTkzODk5MywiZXhwIjoxNzQxOTQwMTkzfQ.MTZWNxeBJ09uXYLsNolsJ0LhoIBZg0NqCtNNc_nCGHg"
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDY4ZjljOWVkMjgwMDAxYjVhMDIzMSIsImlhdCI6MTc0MjExNDcxNiwiZXhwIjoxNzQyMTE1OTE2fQ.kYuYNQyieYgQYyUv1Go9p1dKOJBaUy3DRY_z8wc-PoE"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 3,
-    "hasContent" : true,
     "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 3
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -97,7 +97,7 @@
     "value" : "WIN-9K741VKQF95"
   }, {
     "name" : "thread",
-    "value" : "4156@WIN-9K741VKQF95.main(1)"
+    "value" : "17748@WIN-9K741VKQF95.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -118,6 +118,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7f97f635f0a94675.json",
+  "source" : "bd5569c04d690db0.json",
   "parameterValues" : [ ]
 }

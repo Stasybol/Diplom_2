@@ -1,12 +1,12 @@
 {
-  "uid" : "178a18207e617702",
+  "uid" : "7ff57e8583de685",
   "name" : "Создание заказа с одним ингредиентом без авторизации",
   "fullName" : "CreateOrderWithoutAuthorizationTest.oneIngredient",
   "historyId" : "82f48af49c742561326ae8805cf02614",
   "time" : {
-    "start" : 1741939005519,
-    "stop" : 1741939005931,
-    "duration" : 412
+    "start" : 1742114729695,
+    "stop" : 1742114730061,
+    "duration" : 366
   },
   "description" : "Проверка, что система возвращает ошибку при попытке создания заказа с одним ингредиентом без авторизации.",
   "descriptionHtml" : "<p>Проверка, что система возвращает ошибку при попытке создания заказа с одним ингредиентом без авторизации.</p>\n",
@@ -20,43 +20,43 @@
     "steps" : [ {
       "name" : "Получение списка ингредиентов",
       "time" : {
-        "start" : 1741939005519,
-        "stop" : 1741939005728,
-        "duration" : 209
+        "start" : 1742114729695,
+        "stop" : 1742114729872,
+        "duration" : 177
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "Создание заказа без авторизации",
       "time" : {
-        "start" : 1741939005729,
-        "stop" : 1741939005931,
-        "duration" : 202
+        "start" : 1742114729880,
+        "stop" : 1742114730061,
+        "duration" : 181
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "ingredients",
-        "value" : "site.nomoreparties.stellarburgers.model.Ingredients@392da875"
+        "value" : "site.nomoreparties.stellarburgers.model.Ingredients@b96101b"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 2,
-    "hasContent" : true,
     "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 2
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -76,7 +76,7 @@
     "value" : "WIN-9K741VKQF95"
   }, {
     "name" : "thread",
-    "value" : "4156@WIN-9K741VKQF95.main(1)"
+    "value" : "17748@WIN-9K741VKQF95.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -97,6 +97,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "178a18207e617702.json",
+  "source" : "7ff57e8583de685.json",
   "parameterValues" : [ ]
 }

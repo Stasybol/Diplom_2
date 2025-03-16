@@ -1,12 +1,12 @@
 {
-  "uid" : "776d6a9f3a583242",
+  "uid" : "2d3a2f7e47e6f380",
   "name" : "Получение заказов без авторизации конкректного пользователя",
   "fullName" : "ReceivingOrdersTest.receivingOrdersWithAuthorization",
   "historyId" : "7f321f90464ff2b792f41b18748a996e",
   "time" : {
-    "start" : 1741939020910,
-    "stop" : 1741939024498,
-    "duration" : 3588
+    "start" : 1742114745201,
+    "stop" : 1742114748863,
+    "duration" : 3662
   },
   "description" : "Проверка, что система возвращает ошибку при попытке получения списка заказов без авторизации конкретного пользователя.",
   "descriptionHtml" : "<p>Проверка, что система возвращает ошибку при попытке получения списка заказов без авторизации конкретного пользователя.</p>\n",
@@ -20,97 +20,97 @@
     "steps" : [ {
       "name" : "Создание пользователя",
       "time" : {
-        "start" : 1741939020910,
-        "stop" : 1741939021166,
-        "duration" : 256
+        "start" : 1742114745201,
+        "stop" : 1742114745485,
+        "duration" : 284
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "user",
-        "value" : "site.nomoreparties.stellarburgers.model.User@38c408c7"
+        "value" : "site.nomoreparties.stellarburgers.model.User@b234301"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Получение списка ингредиентов",
       "time" : {
-        "start" : 1741939021177,
-        "stop" : 1741939021394,
-        "duration" : 217
+        "start" : 1742114745485,
+        "stop" : 1742114745693,
+        "duration" : 208
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "Создание заказа с авторизацией",
       "time" : {
-        "start" : 1741939021395,
-        "stop" : 1741939023697,
-        "duration" : 2302
+        "start" : 1742114745693,
+        "stop" : 1742114748094,
+        "duration" : 2401
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "ingredients",
-        "value" : "site.nomoreparties.stellarburgers.model.Ingredients@2cf846b9"
+        "value" : "site.nomoreparties.stellarburgers.model.Ingredients@53b3cd9b"
       }, {
         "name" : "token",
-        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDNlMTRjOWVkMjgwMDAxYjU5YWJlMSIsImlhdCI6MTc0MTkzOTAyMCwiZXhwIjoxNzQxOTQwMjIwfQ.Vo-SYWTFmPu0BFb14w86YePuClnS6QP9NCz4eWuRj3o"
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDY4ZmI4OWVkMjgwMDAxYjVhMDI2MSIsImlhdCI6MTc0MjExNDc0NCwiZXhwIjoxNzQyMTE1OTQ0fQ.W8WVRHfLEhsaVU5Gg_5zPyUuj1lz_bD_YT5Eh9DKO-M"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     }, {
       "name" : "Получение заказа определенного пользователя без авторизации в системе",
       "time" : {
-        "start" : 1741939023697,
-        "stop" : 1741939023890,
-        "duration" : 193
+        "start" : 1742114748094,
+        "stop" : 1742114748259,
+        "duration" : 165
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "stepsCount" : 0,
-      "hasContent" : false,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "Удаление пользователя",
       "time" : {
-        "start" : 1741939023899,
-        "stop" : 1741939024488,
-        "duration" : 589
+        "start" : 1742114748275,
+        "stop" : 1742114748847,
+        "duration" : 572
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "token",
-        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDNlMTRjOWVkMjgwMDAxYjU5YWJlMSIsImlhdCI6MTc0MTkzOTAyMCwiZXhwIjoxNzQxOTQwMjIwfQ.Vo-SYWTFmPu0BFb14w86YePuClnS6QP9NCz4eWuRj3o"
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZDY4ZmI4OWVkMjgwMDAxYjVhMDI2MSIsImlhdCI6MTc0MjExNDc0NCwiZXhwIjoxNzQyMTE1OTQ0fQ.W8WVRHfLEhsaVU5Gg_5zPyUuj1lz_bD_YT5Eh9DKO-M"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 5,
-    "hasContent" : true,
     "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 5
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -130,7 +130,7 @@
     "value" : "WIN-9K741VKQF95"
   }, {
     "name" : "thread",
-    "value" : "4156@WIN-9K741VKQF95.main(1)"
+    "value" : "17748@WIN-9K741VKQF95.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -151,6 +151,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "776d6a9f3a583242.json",
+  "source" : "2d3a2f7e47e6f380.json",
   "parameterValues" : [ ]
 }

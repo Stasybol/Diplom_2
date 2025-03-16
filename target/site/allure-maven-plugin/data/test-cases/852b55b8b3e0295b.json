@@ -1,12 +1,12 @@
 {
-  "uid" : "97ba2151ac3516f7",
+  "uid" : "852b55b8b3e0295b",
   "name" : "Создание пользователя без указания логина",
   "fullName" : "CreateUserTest.withoutEmail",
   "historyId" : "544a3da57a78f2a863972803d692d60e",
   "time" : {
-    "start" : 1741939006526,
-    "stop" : 1741939006737,
-    "duration" : 211
+    "start" : 1742114730638,
+    "stop" : 1742114730834,
+    "duration" : 196
   },
   "description" : "Проверка, что система возвращает ошибку при попытке создания пользователя без указания поля email.",
   "descriptionHtml" : "<p>Проверка, что система возвращает ошибку при попытке создания пользователя без указания поля email.</p>\n",
@@ -20,28 +20,28 @@
     "steps" : [ {
       "name" : "Создание пользователя",
       "time" : {
-        "start" : 1741939006526,
-        "stop" : 1741939006727,
-        "duration" : 201
+        "start" : 1742114730638,
+        "stop" : 1742114730825,
+        "duration" : 187
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ {
         "name" : "user",
-        "value" : "site.nomoreparties.stellarburgers.model.User@659b0c20"
+        "value" : "site.nomoreparties.stellarburgers.model.User@16c2c396"
       } ],
-      "stepsCount" : 0,
-      "hasContent" : true,
       "shouldDisplayMessage" : false,
-      "attachmentsCount" : 0
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 1,
-    "hasContent" : true,
     "shouldDisplayMessage" : false,
-    "attachmentsCount" : 0
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 1
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -61,7 +61,7 @@
     "value" : "WIN-9K741VKQF95"
   }, {
     "name" : "thread",
-    "value" : "4156@WIN-9K741VKQF95.main(1)"
+    "value" : "17748@WIN-9K741VKQF95.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit4"
@@ -82,6 +82,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "97ba2151ac3516f7.json",
+  "source" : "852b55b8b3e0295b.json",
   "parameterValues" : [ ]
 }
