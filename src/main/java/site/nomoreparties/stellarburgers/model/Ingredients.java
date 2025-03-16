@@ -1,6 +1,7 @@
 package site.nomoreparties.stellarburgers.model;
 
 import com.google.gson.Gson;
+import site.nomoreparties.stellarburgers.response.ListIngredients;
 
 import java.util.Random;
 
@@ -16,7 +17,7 @@ public class Ingredients {
 
     public static void initHashIngredients(String jsonResponse) {
         Gson gson = new Gson();
-        ApiResponseIngredient response = gson.fromJson(jsonResponse, ApiResponseIngredient.class);
+        ListIngredients response = gson.fromJson(jsonResponse, ListIngredients.class);
 
         if (response.getData() != null) {
             hashIngredients = new String[response.getData().length];

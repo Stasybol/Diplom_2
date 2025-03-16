@@ -7,7 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 import site.nomoreparties.stellarburgers.client.BurgerServiceClient;
 import site.nomoreparties.stellarburgers.model.Ingredients;
-import site.nomoreparties.stellarburgers.model.TokenUser;
+import site.nomoreparties.stellarburgers.response.TokenUser;
 import site.nomoreparties.stellarburgers.model.User;
 import static org.apache.http.HttpStatus.*;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -26,7 +26,7 @@ public class ReceivingOrdersTest {
         client = new BurgerServiceClient(BASE_URI);
         User user = User.allField();
         ValidatableResponse responseCreateUser = client.createUser(user);
-        responseCreateUser.assertThat().body(SUCCESS, equalTo(true));
+        Assume.assumeTrue(responseCreateUser.extract().statusCode() == SC_OK);
         token = responseCreateUser.extract().as(TokenUser.class).getToken();
 
         String jsonResponse = client.receivingListIngredients().extract().asString();

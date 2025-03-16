@@ -50,7 +50,6 @@ public class CreateOrderWithoutAuthorizationTest {
     public void withoutIngredients(){
         ingredients = Ingredients.createListIngredients(0);
         response = client.createOrder(ingredients);
-        /// узнать статус код и сообщение если есть
         response.assertThat().statusCode(SC_BAD_REQUEST).body(MESSAGE, equalTo(WITHOUT_INGREDIENTS));
     }
 

@@ -5,7 +5,7 @@ import org.junit.After;
 import org.junit.Assume;
 import org.junit.Test;
 import site.nomoreparties.stellarburgers.client.BurgerServiceClient;
-import site.nomoreparties.stellarburgers.model.TokenUser;
+import site.nomoreparties.stellarburgers.response.TokenUser;
 import site.nomoreparties.stellarburgers.model.User;
 import static org.apache.http.HttpStatus.*;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -24,7 +24,7 @@ public class CreateUserTest {
         client = new BurgerServiceClient(BASE_URI);
         user = User.allField();
         responseCreate = client.createUser(user);
-        responseCreate.assertThat().statusCode(SC_CREATED).body(SUCCESS, equalTo(true));
+        responseCreate.assertThat().statusCode(SC_OK).body(SUCCESS, equalTo(true));
     }
 
     @Test

@@ -135,7 +135,7 @@ public class BurgerServiceClient {
                 .all()
                 .baseUri(baseURI)
                 .header(HEADER_CONTENT_TYPE, TYPE_JSON)
-                .get("/api/ingredients")
+                .get(GET_LIST_INGREDIENTS)
                 .then()
                 .log()
                 .all();

@@ -15,7 +15,7 @@ public class User {
     }
 
     public static User allField() {
-        return new User(System.currentTimeMillis() + EMAIL, PASSWORD, NAME);
+        return new User(System.currentTimeMillis() + EMAIL, PASSWORD + System.currentTimeMillis(), NAME + System.currentTimeMillis());
     }
 
     public static User withoutEmail() {

@@ -1,4 +1,4 @@
-package site.nomoreparties.stellarburgers.model;
+package site.nomoreparties.stellarburgers.response;
 
 public class TokenUser {
     private String accessToken;

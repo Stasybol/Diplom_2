@@ -1,6 +1,6 @@
-package site.nomoreparties.stellarburgers.model;
+package site.nomoreparties.stellarburgers.response;
 
-public class ApiResponseIngredient {
+public class ListIngredients {
     private IdIngredient[] data;
 
     public IdIngredient[] getData() {

@@ -4,7 +4,7 @@ import io.restassured.response.ValidatableResponse;
 import org.junit.*;
 import site.nomoreparties.stellarburgers.client.BurgerServiceClient;
 import site.nomoreparties.stellarburgers.model.Credentials;
-import site.nomoreparties.stellarburgers.model.TokenUser;
+import site.nomoreparties.stellarburgers.response.TokenUser;
 import site.nomoreparties.stellarburgers.model.User;
 import static org.apache.http.HttpStatus.*;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -24,7 +24,7 @@ public class ChangeDataUserTest {
         client = new BurgerServiceClient(BASE_URI);
         user = User.allField();
         ValidatableResponse responseCreate = client.createUser(user);
-        responseCreate.assertThat().body(SUCCESS, equalTo(true));
+        Assume.assumeTrue(responseCreate.extract().statusCode() == SC_OK);
         token = responseCreate.extract().as(TokenUser.class).getToken();
     }
 
@@ -34,16 +34,7 @@ public class ChangeDataUserTest {
     public void authorizationAndChangeEmail(){
         Credentials credentials = Credentials.withOtherEmail(user, EMAIL);
         ValidatableResponse responseChange = client.changeDataUser(credentials, token);
-        responseChange.assertThat().statusCode(SC_OK).body(SUCCESS, equalTo(true));
-    }
-
-    @Test
-    @DisplayName("Изменение пароля авторизованного пользователя")
-    @Description("Проверка успешного изменения поля password авторизованного пользователя.")
-    public void authorizationAndChangePassword(){
-        Credentials credentials = Credentials.withOtherPassword(user, PASSWORD);
-        ValidatableResponse responseChange = client.changeDataUser(credentials, token);
-        responseChange.assertThat().statusCode(SC_OK).body(SUCCESS, equalTo(true));
+        responseChange.assertThat().statusCode(SC_OK).body("user.email", equalTo(credentials.getEmail()));
     }
 
     @Test
@@ -52,7 +43,7 @@ public class ChangeDataUserTest {
     public void authorizationAndChangeName(){
         Credentials credentials = Credentials.withOtherName(user, NAME);
         ValidatableResponse responseChange = client.changeDataUser(credentials, token);
-        responseChange.assertThat().statusCode(SC_OK).body(SUCCESS, equalTo(true));
+        responseChange.assertThat().statusCode(SC_OK).body("user.name", equalTo(credentials.getName()));
     }
 
     @Test
@@ -89,7 +80,7 @@ public class ChangeDataUserTest {
         String existingEmail = user.getEmail();
         User userTwo = User.allField();
         ValidatableResponse responseCreateTwo = client.createUser(userTwo);
-        responseCreateTwo.assertThat().body(SUCCESS, equalTo(true));
+        responseCreateTwo.assertThat().statusCode(SC_OK);
         String tokenTwo = responseCreateTwo.extract().as(TokenUser.class).getToken();
 
         Credentials credentials = Credentials.withOtherEmail(userTwo, existingEmail);

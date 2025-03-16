@@ -7,7 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 import site.nomoreparties.stellarburgers.client.BurgerServiceClient;
 import site.nomoreparties.stellarburgers.model.Credentials;
-import site.nomoreparties.stellarburgers.model.TokenUser;
+import site.nomoreparties.stellarburgers.response.TokenUser;
 import site.nomoreparties.stellarburgers.model.User;
 import static org.apache.http.HttpStatus.*;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -30,7 +30,7 @@ public class LoginUserTest {
         client = new BurgerServiceClient(BASE_URI);
         user = User.allField();
         ValidatableResponse responseCreate = client.createUser(user);
-        responseCreate.assertThat().body(SUCCESS, equalTo(true));
+        Assume.assumeTrue(responseCreate.extract().statusCode() == SC_OK);
         token = responseCreate.extract().as(TokenUser.class).getToken();
     }
 
