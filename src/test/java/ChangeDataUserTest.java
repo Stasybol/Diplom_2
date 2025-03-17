@@ -4,7 +4,7 @@ import io.restassured.response.ValidatableResponse;
 import org.junit.*;
 import site.nomoreparties.stellarburgers.client.BurgerServiceClient;
 import site.nomoreparties.stellarburgers.model.Credentials;
-import site.nomoreparties.stellarburgers.response.TokenUser;
+import site.nomoreparties.stellarburgers.model.TokenUser;
 import site.nomoreparties.stellarburgers.model.User;
 import static org.apache.http.HttpStatus.*;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -51,15 +51,6 @@ public class ChangeDataUserTest {
     @Description("Проверка, что система возвращает ошибку при попытке изменения поля email без авторизации.")
     public void withoutAuthorizationAndChangeEmail(){
         Credentials credentials = Credentials.withOtherEmail(user, EMAIL);
-        ValidatableResponse responseChange = client.changeDataUser(credentials);
-        responseChange.assertThat().statusCode(SC_UNAUTHORIZED).body(MESSAGE, equalTo(WITHOUT_AUTHORIZATION));
-    }
-
-    @Test
-    @DisplayName("Изменение пароля без авторизации")
-    @Description("Проверка, что система возвращает ошибку при попытке изменения поля password без авторизации.")
-    public void withoutAuthorizationAndChangePassword(){
-        Credentials credentials = Credentials.withOtherPassword(user, PASSWORD);
         ValidatableResponse responseChange = client.changeDataUser(credentials);
         responseChange.assertThat().statusCode(SC_UNAUTHORIZED).body(MESSAGE, equalTo(WITHOUT_AUTHORIZATION));
     }

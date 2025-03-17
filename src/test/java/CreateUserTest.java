@@ -5,7 +5,7 @@ import org.junit.After;
 import org.junit.Assume;
 import org.junit.Test;
 import site.nomoreparties.stellarburgers.client.BurgerServiceClient;
-import site.nomoreparties.stellarburgers.response.TokenUser;
+import site.nomoreparties.stellarburgers.model.TokenUser;
 import site.nomoreparties.stellarburgers.model.User;
 import static org.apache.http.HttpStatus.*;
 import static org.hamcrest.CoreMatchers.equalTo;

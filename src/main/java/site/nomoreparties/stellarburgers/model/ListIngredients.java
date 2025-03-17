@@ -1,4 +1,4 @@
-package site.nomoreparties.stellarburgers.response;
+package site.nomoreparties.stellarburgers.model;
 
 public class ListIngredients {
     private IdIngredient[] data;

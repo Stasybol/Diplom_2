@@ -1,7 +1,6 @@
 package site.nomoreparties.stellarburgers.model;
 
 import com.google.gson.Gson;
-import site.nomoreparties.stellarburgers.response.ListIngredients;
 
 import java.util.Random;
 

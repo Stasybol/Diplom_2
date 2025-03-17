@@ -1,4 +1,4 @@
-package site.nomoreparties.stellarburgers.response;
+package site.nomoreparties.stellarburgers.model;
 
 import com.google.gson.annotations.SerializedName;
 
